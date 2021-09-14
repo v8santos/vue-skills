@@ -11,6 +11,11 @@ const routes = [
     path: '/currencyconverter',
     name: 'Conversor de moedas',
     component: () => import(/* webpackChunkName: "currencyconverter" */ '../views/CurrencyConverter.vue')
+  },
+  {
+    path: '/calculator',
+    name: 'Calculadora',
+    component: () => import(/* webpackChunkName: "calculator" */ '../views/Calculator.vue')
   }
 ]
 

@@ -1,7 +1,8 @@
 <template>
   <div id="nav">
     <router-link to="/">Home</router-link> |
-    <router-link to="/currencyconverter">Conversor de moedas</router-link>
+    <router-link to="/currencyconverter">Conversor de moedas</router-link> |
+    <router-link to="/calculator">Calculadora</router-link>
   </div>
   <main class="container">
     <router-view/>

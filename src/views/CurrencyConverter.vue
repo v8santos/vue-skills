@@ -4,8 +4,8 @@
             Conversor de moedas
         </div>
         <div class="card-body">
-            <div class="row align-items-end">
-                <div class="col-sm-6 mb-3">
+            <div class="row justify-content-center">
+                <div class="col-sm-6 col-lg-4 mb-3">
                     <label class="mb-2">
                         <select
                         class="form-select form-select-sm"
@@ -20,7 +20,7 @@
                     </label>
                     <input class="form-control" type="number" min="0" v-model="input">
                 </div>
-                <div class="col-sm-6 mb-3">
+                <div class="col-sm-6 col-lg-4 mb-3">
                     <label class="mb-2">
                         <select
                         class="form-select form-select-sm"
