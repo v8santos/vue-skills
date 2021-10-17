@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "name": "SSD A400, Kingston",
+        "description": "Características: - Marca: Kingston - Modelo SA400S37/240G",
+        "price": "224.99",
+        "category": "Unidades Internas SSD",
+        "quantity": "12"
+    },
+    {
+        "id": 2,
+        "name": "Memória RAM Crucial Ballistix 8GB DDR4 2666 Mhz",
+        "description": "Memória RAM Crucial Ballistix 8GB DDR4 2666 Mhz, CL16, UDIMM, Preto - BL8G26C16U4B",
+        "price": "269.90",
+        "category": "Memória RAM",
+        "quantity": "25"
+    },
+    {
+        "id": 5,
+        "name": "Processador Intel Core i7-10700F",
+        "description": "Processador Intel Core i7-10700F 16MB 2.9GHz - 4.8Ghz LGA 1200 BX8070110700F",
+        "price": "1670.24",
+        "category": "Processadores (CPU)",
+        "quantity": "33"
+    },
+    {
+        "id": 18,
+        "name": "Placa de Vídeo Asus NVIDIA GeForce GTX 1650",
+        "description": "Placa de Vídeo Asus NVIDIA GeForce GTX 1650, 12 Gbps, 4GB, GDDR6 - TUF-GTX1650-O4GD6-GAMING",
+        "price": "2399.90",
+        "category": "Placas de vídeo (GPU)",
+        "quantity": "22"
+    }
+]

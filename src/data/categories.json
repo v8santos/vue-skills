@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Unidades Internas SSD"
+    },
+    {
+        "id": 2,
+        "name": "Memória RAM"
+    },
+    {
+        "id": 3,
+        "name": "Processadores (CPU)"
+    },
+    {
+        "id": 4,
+        "name": "Placas de vídeo (GPU)"
+    },
+    {
+        "id": 5,
+        "name": "Mouse"
+    },
+    {
+        "id": 6,
+        "name": "Teclado"
+    },
+    {
+        "id": 7,
+        "name": "Monitor"
+    }
+]

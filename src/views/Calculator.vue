@@ -97,7 +97,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 #calc {
     min-width: 200px;
     max-width: 300px;

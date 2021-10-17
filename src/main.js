@@ -25,4 +25,10 @@ app.component('font-awesome-layers-text', FontAwesomeLayersText)
 const axios = require('axios')
 app.config.globalProperties.$http = axios
 
+app.config.globalProperties.$filters = {
+    money(value) {
+        return 'R$ ' + value.replace('.', ',')
+    }
+}
+
 app.use(store).use(router).mount('#app')
