@@ -1,4 +1,9 @@
 <template>
+<div :class="{ 'the-sidebar-outer' : visible }">
+    <div class="the-sidebar-backdrop bg-dark"
+    :class="{ 'd-none' : !visible }"
+    @click.stop="$emit('hide', false)"
+    ></div>
     <div class="the-sidebar bg-light slide" :class="{ 'the-sidebar-left': left, 'the-sidebar-right': !left, shadow: shadow, show: visible }">
         <header>
             <slot name="header">
@@ -15,6 +20,7 @@
             <slot name="footer"></slot>
         </footer>
     </div>
+</div>
 </template>
 
 <script>
@@ -64,5 +70,22 @@ export default {
 }
 .the-sidebar {
     transition: transform .3s ease-in;
+}
+.the-sidebar-outer {
+    position: fixed;
+    z-index: 1099;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.the-sidebar-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.5;
 }
 </style>

@@ -48,8 +48,7 @@
                 <span class="visually-hidden">Loading...</span>
             </div>
         </div>
-        <crud-form></crud-form>
-        <h5 class="text-warning my-3">Lembrar de criar um componente de confirmação de envio</h5>
+        <crud-form :mode="productsStore.mode" :data="productsStore.form" :title="productsStore.title"></crud-form>
     </section>
 </template>
 
@@ -88,12 +87,20 @@ export default {
             }
         },
         editItem(product) {
-            // abrir modal
-            console.log(product)
+            this.$store.commit('products/changeSidebar', {
+                sidebarState: true,
+                form: product,
+                mode: 'edit',
+                title: 'Editar produto',
+            })
         },
         viewItem(product) {
-            // abrir modal
-            console.log(product)
+            this.$store.commit('products/changeSidebar', {
+                sidebarState: true,
+                form: product,
+                mode: 'view',
+                title: 'Detalhes do produto',
+            })
         },
         addProduct() {
             this.$store.commit('products/changeSidebar', true)
